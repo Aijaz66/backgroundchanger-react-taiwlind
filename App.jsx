@@ -3,6 +3,10 @@ import { useState } from 'react'
 
 function App() {
   const [color, setColor] = useState("")
+  let str="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrtsuvwxyz"
+  let s= Math.floor(Math.random() * str.length) 
+    console.log(s);
+    
 
   return (
     <div className='w-full h-screen duration-200' style={{backgroundColor: color}}>
@@ -17,7 +21,8 @@ function App() {
         <button onClick={()=> setColor("pink")} className='outline-none px-4 py-1 rounded-full text-white shadow-lg' style={{backgroundColor:"pink"}}>Pink</button>
         </div>
         
-
+   
+    
 
       </div>
 
